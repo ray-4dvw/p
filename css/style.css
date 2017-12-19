@@ -1681,6 +1681,10 @@ a.logo:hover {
     color: #111;
 }
 
+.small-height .inner-nav ul li a i.yourHomeIcon {
+    color: white;
+}
+
 .inner-nav {
     display: inline-block;
     position: relative;
@@ -2114,6 +2118,63 @@ a.logo:hover {
 }
 
 .main-nav.dark .mn-soc-link:hover {
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+/*
+ * blue panel style
+ */
+
+.main-nav.blue {
+    background-color: rgba(9, 114, 147, .9);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.main-nav.blue .inner-nav ul>li>a {
+    color: rgba(255, 255, 255, .7);
+}
+
+.main-nav.blue .inner-nav ul>li>a:hover,
+.main-nav.blue .inner-nav ul>li>a.active {
+    color: #fff;
+}
+
+.main-nav.blue .mobile-nav {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(255, 255, 255, .9);
+}
+
+.main-nav.blue .mobile-nav:hover,
+.main-nav.blue .mobile-nav.active {
+    color: #fff;
+}
+
+.main-nav.mobile-on.blue .inner-nav {
+    border-top: 1px solid rgba(100, 100, 100, .4);
+}
+
+.main-nav.blue .logo,
+.main-nav.blue a.logo:hover {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);
+}
+
+.main-nav.blue .mn-sub {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.main-nav.blue .mn-soc-link {
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.main-nav.blue .mn-soc-link:hover {
     border: 1px solid rgba(255, 255, 255, .3);
 }
 
@@ -7042,7 +7103,7 @@ section:hover .small-item-carousel .owl-next {
 }
 
 .logo.small-height span {
-    color: black;
+    color: white;
 }
 
 .circle-background {
