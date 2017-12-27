@@ -16,7 +16,7 @@ var userNav = '<nav class="main-nav blue transparent stick-fixed">'+
 '                    <a> </a>'+
 '                </li> '+
 '                <li>'+
-'                    <a href="#" class="" style="font-size:12px;">'+
+'                    <a href="#" class="" style="font-size:12px;" data-toggle="modal" data-target="#exampleModal">'+
 '                        <i class="fa fa-user yourHomeIcon" style="font-size:18px;"></i> Your Home</a>'+
 '                </li> '+
 '            </ul>'+
