@@ -2679,6 +2679,23 @@ a.logo:hover {
     padding: 140px 0;
 }
 
+.full-section {
+    height:100vh;
+    width:100vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .small-section {
     padding: 70px 0;
 }
@@ -7337,7 +7354,7 @@ footer {
     .footerRight {
         text-align: center;
         margin-bottom: 5px;
-    }
+    }    
 }
 
 .footerSocial a{
@@ -7358,6 +7375,16 @@ footer {
 }
 
 
+@media screen and (max-width:768px){
+    .mainSectionContainer {
+        margin: 0 20px;
+    }
+}
+
+.text-bold {
+    font-weight: bold !important;
+}
+
 
 /* Shared */
 
@@ -7372,7 +7399,7 @@ footer {
     line-height: 34px;
     white-space: nowrap;
     border-radius: 0.2em;
-    font-size: 16px;
+    font-size: 14px;
     color: #FFF;
     min-width: 100%;
 }
@@ -7400,7 +7427,7 @@ footer {
 
 .loginBtn--facebook {
     background-color: #4C69BA;
-    background-image: linear-gradient(#4C69BA, #3B55A0);
+    /* background-image: linear-gradient(#4C69BA, #3B55A0); */
     /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
     text-shadow: 0 -1px 0 #354C8C;
 }
@@ -7413,7 +7440,7 @@ footer {
 .loginBtn--facebook:hover,
 .loginBtn--facebook:focus {
     background-color: #5B7BD5;
-    background-image: linear-gradient(#5B7BD5, #4864B1);
+    /* background-image: linear-gradient(#5B7BD5, #4864B1); */
 }
 
 
@@ -7470,6 +7497,46 @@ footer {
 
 .socialLogIn{
     border-left: 1px solid #e5e5e5;
+}
+
+a.interest{
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a.interest h4{
+    margin-bottom: 0;
+}
+
+a.interest:hover {
+    color:#007091;
+}
+
+.socialOutterWrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.socialInnerWrap {
+    display:flex;
+    flex-direction: column;
+}
+
+.socialInnerWrap > *{
+    padding:5px;
+}
+
+@media screen and (max-width: 768px ){
+    .socialLogIn{
+        border-left:none;
+        border-top: 1px solid #e5e5e5;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
 }
 
 

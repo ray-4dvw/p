@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up - 4D Virtual World</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta name="author" content="Roman Kirichik">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/vertical-rhythm.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .inner-nav.desktop-nav ul li:nth-child(2) {
+            display:none;
+        }
+    </style>
+</head>
+
+<body class="appear-animate">
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=1048600258549705';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+    <!-- End Page Loader -->
+
+    <!-- Page Wrap -->
+    <div class="page" id="top">
+        <!-- End Home Section -->
+        <div class="userNav"></div>
+
+        <section class="full-section" style="background-image:url('images/index/nicePhoto4.jpg');">
+            <div class="signUpContent">
+                <div class="step1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title text-center" id="exampleModalLabel">Sign Up to 4D </h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h5>With Email</h5>
+                                        <form class="form-group">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon2">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
+                                            </div>
+                                            <div class="form-group">
+                                                <button onClick="changeToTwo()" type="button" class="btn-fullwidth btn btn-primary">Sign Up</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-6 socialLogIn">
+                                        <h5>With Social Media</h5>
+                                        <div class="socialOutterWrap">
+                                            <div class="socialInnerWrap">
+                                                <div class="form-group">
+                                                    <button onClick="changeToTwo()" class="loginBtn loginBtn--facebook">
+                                                        Facebook
+                                                    </button>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button onClick="changeToTwo()" class="loginBtn loginBtn--google">
+                                                        Google
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="socialInnerWrap">
+                                                <div class="form-group">
+                                                    <button onClick="changeToTwo()" class="loginBtn loginBtn--twitter">
+                                                        Twitter
+                                                    </button>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button onClick="changeToTwo()" class="loginBtn loginBtn--linkedin">
+                                                        LinkedIn
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="text-align:center !important;">
+                                    Already have an account?
+                                    <a href="javascript:void(0)">Log In Here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step2 hide">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title text-center" id="exampleModalLabel">Which describes you best?</h3>
+                            </div>
+                            <div class="modal-body" style="padding:30px;">
+                                <div class="row">
+                                    <a class="col-sm-4 text-center interest" onClick="changeToThree()">
+                                        <div>
+                                            <span aria-hidden="true" class="icon-pricetags" style="font-size:40px;"></span>
+                                        </div>
+                                        <h4>Buyer</h4>
+                                    </a>
+                                    <a class="col-sm-4 text-center interest" onClick="changeToThree()">
+                                        <div>
+                                            <span aria-hidden="true" class="icon-key" style="font-size:40px;"></span>
+                                        </div>
+                                        <h4>Owner</h4>
+                                    </a>
+                                    <a class="col-sm-4 text-center interest" onClick="changeToThree()">
+                                        <div>
+                                            <span aria-hidden="true" class="icon-pencil" style="font-size:40px;"></span>
+                                        </div>
+                                        <h4>Designer</h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="modal-footer" style="text-align:center !important;">
+                                    <a onclick="changeToOne()" style="text-decoration:none; font-size:30px; cursor:pointer;">&#x2190;</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step3 hide">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title text-center" id="exampleModalLabel">Basic Info</h3>
+                            </div>
+                            <div class="modal-body" style="padding:30px;">
+                                <div class="row">
+                                    <form role="form">
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">First Name</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputPassword1">Last Name</label>
+                                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">First Name</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputPassword1">Last Name</label>
+                                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">First Name</label>
+                                          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputPassword1">Last Name</label>
+                                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                                        </div>
+                                        <!-- <div class="form-group">
+                                          <label for="exampleInputFile">File input</label>
+                                          <input type="file" id="exampleInputFile">
+                                          <p class="help-block">Example block-level help text here.</p>
+                                        </div> -->
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox"> Check me out
+                                          </label>
+                                        </div>
+                                        <a  href="dashboard/index.html" class="btn btn-default">Submit</a>
+                                      </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <div class="userFooter"></div>
+        </div>
+        <!-- End Page Wrap -->
+
+        <!-- JS -->
+        <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/SmoothScroll.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+        <script type="text/javascript" src="js/jquery.countTo.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
+        <script type="text/javascript" src="js/gmap3.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+        <script type="text/javascript" src="js/all.js"></script>
+        <script type="text/javascript" src="js/contact-form.js"></script>
+        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+        <script type="text/javascript" src="js/jquery.backgroundvideo.min.js"></script>
+        <script type="text/javascript" src="components/user-nav.js"></script>
+        <script>
+            function changeToTwo() {
+                $('.step1').addClass('hide');
+                $('.step3').addClass('hide');
+                $('.step2').removeClass('hide');
+            }
+
+            function changeToOne() {
+                $('.step1').removeClass('hide');
+                $('.step2').addClass('hide');
+                $('.step3').addClass('hide');
+            }
+
+            function changeToThree() {
+                $('.step3').removeClass('hide');
+                $('.step2').addClass('hide');
+                $('.step1').addClass('hide');
+            }
+        </script>
+        <!-- <script type="text/javascript" src="components/user-footer.js"></script> -->
+
+</body>
+
+</html>

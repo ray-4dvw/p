@@ -1,0 +1,127 @@
+.sidebar-profile{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.sidebar-profile .author img{
+    border-radius: 50%;
+}
+
+.socialPostCard {
+    overflow: hidden;    
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.socialPostCard .card-title {
+    font-weight:bold;
+    font-size:1.3em;
+}
+
+.socialPostCard .card-body{
+    padding: 20px;
+}
+.socialPostCard .card-text{
+    font-size: 14px;
+}
+
+.socialPostCard img{
+    max-width: 100%;
+    object-fit: cover;
+    min-height: 300px;
+}
+
+
+.listingPostCard {
+    overflow: hidden;    
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.listingPostCard .card-title {
+    font-weight:bold;
+    font-size:1.3em;
+}
+
+.listingPostCard .card-body{
+    padding: 20px;
+}
+.listingPostCard .card-text{
+    font-size: 14px;
+}
+
+.listingPostCard img:not(.plus-icon){
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.newsFeedContainer{
+    margin: 0 100px;
+}
+
+.newListing {
+    /* text-align: center;
+    width:100%; */
+    min-height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newListing img{
+    padding: 5px;
+    width:150px;
+}
+
+@media screen and (max-width:1200px){
+    .newsFeedContainer{
+        margin: 0 10px;
+    }
+} 
+
+.newDesign {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 60px 0 60px;
+    border: 2px dotted #007091;
+    padding: 50px 0;
+}
+
+.newDesign img{
+    margin-bottom: 30px;
+}
+.newDesign p{
+    margin-bottom:0;
+}
+
+.design-image.card-img-top {
+    width: 100%;
+    height: inherit; 
+}
+
+.newsCard {
+    padding: 5px;
+    font-size: 0.8em;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    color:#777;
+}
+
+.newsCard p {
+    font-size: 1em;
+}
+
+
+.newsCard div {
+    padding: 0 10px;
+}
