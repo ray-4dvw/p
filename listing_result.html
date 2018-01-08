@@ -84,7 +84,7 @@
                                             <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
                                         </div>
                                         <div class="form-group">
-                                            <button type="button" class="btn-fullwidth btn btn-primary">Log In</button>
+                                            <a href="dashboard/index.html" type="button" class="btn-fullwidth btn btn-primary">Log In</a>
                                         </div>
                                     </form>
                                 </div>
@@ -122,16 +122,14 @@
 
         <section class="page-section pt-0 pb-0">
             <div>
-                <div class="col-sm-5 col-md-4 col-lg-3  pt-50" style="background-color:rgba(9, 114, 147, .9); height: calc(100vh - 75px); box-shadow:0 3px 5px -1px rgba(0,0,0,.16), 0 6px 10px 0 rgba(0,0,0,.1), 0 1px 18px 0 rgba(0,0,0,.08);">
+                <div class="restul-sidebar col-sm-5 col-md-4 col-lg-3 hidden-xs pt-20" style="height: calc(100vh - 75px);">
                     <div>
                         <form class="form resultForm" role="form">
                             <div class="search-wrap">
-                                <a href="javascript:void(0);" class="search-button mod animate" title="Start Search" style="background-color:rgba(9, 114, 147, .9);">
-                                    SEARCH
-                                </a>
-                                <i style="position: absolute; left: 22px; font-size: 1.3em; top: 22px;
+                                <a href="javascript:void(0);" class="search-button mod animate" style="background-color:rgba(9, 114, 147, .9);">SEARCH</a>
+                                <i style="position: absolute; left: 13px; font-size: 1.1em; top: 13px;
                                 color: #999;" class="fa fa-search" aria-hidden="true"></i>
-                                <input type="text" class="form-control search-field" placeholder="   Postal Code" style="padding:30px; font-size: 1.05em; border-radius:3px; background-color:rgba(255,255,255,0.9)">
+                                <input type="text" class="form-control search-field" placeholder="   Postal Code" style="padding-left:20px; font-size: 0.9em; border-radius:3px; background-color:rgba(255,255,255,0.9)">
                             </div>
                             <hr>
                             <div class="form-row two">
@@ -146,10 +144,10 @@
                                     <option>Condo</option>
                                     <option>Townhouse</option>
                                 </select>
-
                             </div>
+                            <hr/>
                             <div class="form-row two">
-                                <h5 class="mb-0">Price Limit</h5>
+                                <h5 class="text-bold mb-10">Price Limit</h5>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <option>Min.</option>
                                     <option>0</option>
@@ -165,8 +163,9 @@
                                     <option>$1,000,000+</option>
                                 </select>
                             </div>
+                            <hr/>
                             <div class="form-row three">
-                                <i style="position: absolute; left: 43px; font-size: 1.3em; top: 17px;
+                                <i style="position: absolute; left: 43px; font-size: 1.3em; top: 6px;
                                         color: #999;" class="fa fa-bed" aria-hidden="true"></i>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <option>Any</option>
@@ -190,181 +189,345 @@
                                     <option>2+</option>
                                 </select>
                             </div>
-                            <hr>
-                            <div class="form-row three">
-                                <h5 class="mb-0">Features</h5>
-                                <label class="features-lable" for="customCheck1">Pets</label>
-                                <input type="checkbox">
-                                <label class="features-lable" for="customCheck1">Furnished</label>
-                                <input type="checkbox">
-                                <label class="features-lable" for="customCheck1">Gym</label>
-                                <input type="checkbox">
-                                <label class="features-lable" for="customCheck1">Pool</label>
-                                <input type="checkbox">
-
+                            <hr/>
+                            <div class="form-row" style="overflow:hidden;">
+                                <h5 class="text-bold mb-10">Features</h5>
+                                <div class="resultOption">
+                                    <form>
+                                        <input type="checkbox">
+                                        <label class="features-lable" for="customCheck1">Pets</label>
+                                    </form>
+                                    <form>
+                                        <input type="checkbox">
+                                        <label class="features-lable" for="customCheck1">Furnished</label>
+                                    </form>
+                                    <form>
+                                        <input type="checkbox">
+                                        <label class="features-lable" for="customCheck1">Gym</label>
+                                    </form>
+                                    <form>
+                                        <input type="checkbox">
+                                        <label class="features-lable" for="customCheck1">Pool</label>
+                                    </form>
+                                    <form>
+                                        <input type="checkbox">
+                                        <label class="features-lable" for="customCheck1">Storage</label>
+                                    </form>
+                                    <form>
+                                        <input type="checkbox">
+                                        <label class="features-lable" for="customCheck1">Laundry</label>
+                                    </form>
+                                    <form>
+                                        <input type="checkbox">
+                                        <label class="features-lable" for="customCheck1">Central AC</label>
+                                    </form>
+                                    <form>
+                                        <input type="checkbox">
+                                        <label class="features-lable" for="customCheck1">Elevator</label>
+                                    </form>
+                                    <form>
+                                        <input type="checkbox">
+                                        <label class="features-lable" for="customCheck1">High Ceilings</label>
+                                    </form>
+                                </div>
                             </div>
-
-
-
+                            <hr/>
                         </form>
+
+                        <hr/>
+                        <div class="hidden-sm hidden-md hidden-lg">
+                            <a class="btn btn-block close-sidebar">
+                                <i class="fa fa-times" aria-hidden="true"></i> Close</a>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-sm-7 col-md-8 col-lg-9 pt-50" style="height: calc(100vh - 75px); overflow-y: scroll; background-color:#f3f3f3;">
-                    <div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="result-card">
-                                <div>
-                                    <img src="images/result.png" alt="">
-                                </div>
-                                <div class="result-card-text">
-                                    <h4 class="mt-0 mb-20">
-                                        99 Excepteur Drive
-                                    </h4>
-                                    <div class="result-card-info">
-                                        <span class="result-card-info-price">$700,000</span>
-                                        <span>
-                                            3
-                                            <i class="fa fa-bed" aria-hidden="true"></i>
-                                            2
-                                            <i class="fa fa-bath" aria-hidden="true"></i>
-                                        </span>
+                <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9  pt-20" style="height: calc(100vh - 75px); overflow-y: scroll; background-color:#efefef; position:relative; padding:0;">
+                    <div class=" " style="overflow: hidden; background-color:#e0e0e0; box-shadow:0 3px 3px rgba(213,213,213,0.3); padding:20px 0;">
+                        <div class="col-xs-2 hidden-sm hidden-md hidden-lg">
+                            <div class="btn-group pull-left" id="switch-menu">
+                                <button class="btn btn-primary blue">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 text-center sort-option">
+                            <select class="form-control">
+                                <option label="Sort" selected="selected">Sort</option>
+                                <option label="Most Recent">Most Recent</option>
+                                <option label="Price - Low to High">Price - Low to High</option>
+                                <option label="Price - High to Low">Price - High to Low</option>
+                                <option label="Most Recent">Listed Date</option>
+                                <option label="Address - A to Z">Address - A to Z</option>
+                                <option label="Neighborhood - A to Z">Neighborhood - A to Z</option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-xs-4 col-sm-4 pull-right">
+                            <div class="btn-group pull-right" id="switch-view">
+                                <button class="btn btn-primary blue">
+                                    <i class="fa fa-map" aria-hidden="true"></i>
+                                </button>
+                                <button class="btn btn-primary blue active">
+                                    <i class="fa fa-th" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resultContent">
+                        <div class="resultGrid pt-30 active" style="padding-left: 10px; padding-right: 10px;">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="result-card">
+                                    <div>
+                                        <img src="images/result.png" alt="">
                                     </div>
-                                    <hr class="mt-10 mb-20">
-                                    <div class="result-card-footer">
-                                        <span>
-                                            <i class="fa fa-heart" aria-hidden="true"></i>
-                                            <i class="fa fa-comments" aria-hidden="true"></i>
-                                        </span>
-                                        <span>
-                                            <a class=" ">Learn More</a>
-                                        </span>
+                                    <div class="result-card-text">
+                                        <h4 class="mt-0 mb-20">
+                                            99 Excepteur Drive
+                                        </h4>
+                                        <div class="result-card-info">
+                                            <span class="result-card-info-price">$700,000</span>
+                                            <span>
+                                                3
+                                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                                2
+                                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <hr class="mt-10 mb-20">
+                                        <div class="result-card-footer">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                            </span>
+                                            <span>
+                                                <a class=" ">Learn More</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="result-card">
+                                    <div>
+                                        <img src="images/result.png" alt="">
+                                    </div>
+                                    <div class="result-card-text">
+                                        <h4 class="mt-0 mb-20">
+                                            99 Excepteur Drive
+                                        </h4>
+                                        <div class="result-card-info">
+                                            <span class="result-card-info-price">$700,000</span>
+                                            <span>
+                                                3
+                                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                                2
+                                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <hr class="mt-10 mb-20">
+                                        <div class="result-card-footer">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                            </span>
+                                            <span>
+                                                <a class=" ">Learn More</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="result-card">
+                                    <div>
+                                        <img src="images/result.png" alt="">
+                                    </div>
+                                    <div class="result-card-text">
+                                        <h4 class="mt-0 mb-20">
+                                            99 Excepteur Drive
+                                        </h4>
+                                        <div class="result-card-info">
+                                            <span class="result-card-info-price">$700,000</span>
+                                            <span>
+                                                3
+                                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                                2
+                                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <hr class="mt-10 mb-20">
+                                        <div class="result-card-footer">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                            </span>
+                                            <span>
+                                                <a class=" ">Learn More</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="result-card">
+                                    <div>
+                                        <img src="images/result.png" alt="">
+                                    </div>
+                                    <div class="result-card-text">
+                                        <h4 class="mt-0 mb-20">
+                                            99 Excepteur Drive
+                                        </h4>
+                                        <div class="result-card-info">
+                                            <span class="result-card-info-price">$700,000</span>
+                                            <span>
+                                                3
+                                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                                2
+                                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <hr class="mt-10 mb-20">
+                                        <div class="result-card-footer">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                            </span>
+                                            <span>
+                                                <a class=" ">Learn More</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="result-card">
+                                    <div>
+                                        <img src="images/result.png" alt="">
+                                    </div>
+                                    <div class="result-card-text">
+                                        <h4 class="mt-0 mb-20">
+                                            99 Excepteur Drive
+                                        </h4>
+                                        <div class="result-card-info">
+                                            <span class="result-card-info-price">$700,000</span>
+                                            <span>
+                                                3
+                                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                                2
+                                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <hr class="mt-10 mb-20">
+                                        <div class="result-card-footer">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                            </span>
+                                            <span>
+                                                <a class=" ">Learn More</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="result-card">
+                                    <div>
+                                        <img src="images/result.png" alt="">
+                                    </div>
+                                    <div class="result-card-text">
+                                        <h4 class="mt-0 mb-20">
+                                            99 Excepteur Drive
+                                        </h4>
+                                        <div class="result-card-info">
+                                            <span class="result-card-info-price">$700,000</span>
+                                            <span>
+                                                3
+                                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                                2
+                                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <hr class="mt-10 mb-20">
+                                        <div class="result-card-footer">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                            </span>
+                                            <span>
+                                                <a class=" ">Learn More</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="result-card">
+                                    <div>
+                                        <img src="images/result.png" alt="">
+                                    </div>
+                                    <div class="result-card-text">
+                                        <h4 class="mt-0 mb-20">
+                                            99 Excepteur Drive
+                                        </h4>
+                                        <div class="result-card-info">
+                                            <span class="result-card-info-price">$700,000</span>
+                                            <span>
+                                                3
+                                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                                2
+                                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <hr class="mt-10 mb-20">
+                                        <div class="result-card-footer">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                            </span>
+                                            <span>
+                                                <a class=" ">Learn More</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="result-card">
+                                    <div>
+                                        <img src="images/result.png" alt="">
+                                    </div>
+                                    <div class="result-card-text">
+                                        <h4 class="mt-0 mb-20">
+                                            99 Excepteur Drive
+                                        </h4>
+                                        <div class="result-card-info">
+                                            <span class="result-card-info-price">$700,000</span>
+                                            <span>
+                                                3
+                                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                                2
+                                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <hr class="mt-10 mb-20">
+                                        <div class="result-card-footer">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                            </span>
+                                            <span>
+                                                <a class=" ">Learn More</a>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="result-card">
-                                <div>
-                                    <img src="images/result.png" alt="">
-                                </div>
-                                <div class="result-card-text">
-                                    <h4 class="mt-0 mb-20">
-                                        99 Excepteur Drive
-                                    </h4>
-                                    <div class="result-card-info">
-                                        <span class="result-card-info-price">$700,000</span>
-                                        <span>
-                                            3
-                                            <i class="fa fa-bed" aria-hidden="true"></i>
-                                            2
-                                            <i class="fa fa-bath" aria-hidden="true"></i>
-                                        </span>
-                                    </div>
-                                    <hr class="mt-10 mb-20">
-                                    <div class="result-card-footer">
-                                        <span>
-                                            <i class="fa fa-heart" aria-hidden="true"></i>
-                                            <i class="fa fa-comments" aria-hidden="true"></i>
-                                        </span>
-                                        <span>
-                                            <a class=" ">Learn More</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="result-card">
-                                <div>
-                                    <img src="images/result.png" alt="">
-                                </div>
-                                <div class="result-card-text">
-                                    <h4 class="mt-0 mb-20">
-                                        99 Excepteur Drive
-                                    </h4>
-                                    <div class="result-card-info">
-                                        <span class="result-card-info-price">$700,000</span>
-                                        <span>
-                                            3
-                                            <i class="fa fa-bed" aria-hidden="true"></i>
-                                            2
-                                            <i class="fa fa-bath" aria-hidden="true"></i>
-                                        </span>
-                                    </div>
-                                    <hr class="mt-10 mb-20">
-                                    <div class="result-card-footer">
-                                        <span>
-                                            <i class="fa fa-heart" aria-hidden="true"></i>
-                                            <i class="fa fa-comments" aria-hidden="true"></i>
-                                        </span>
-                                        <span>
-                                            <a class=" ">Learn More</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="result-card">
-                                <div>
-                                    <img src="images/result.png" alt="">
-                                </div>
-                                <div class="result-card-text">
-                                    <h4 class="mt-0 mb-20">
-                                        99 Excepteur Drive
-                                    </h4>
-                                    <div class="result-card-info">
-                                        <span class="result-card-info-price">$700,000</span>
-                                        <span>
-                                            3
-                                            <i class="fa fa-bed" aria-hidden="true"></i>
-                                            2
-                                            <i class="fa fa-bath" aria-hidden="true"></i>
-                                        </span>
-                                    </div>
-                                    <hr class="mt-10 mb-20">
-                                    <div class="result-card-footer">
-                                        <span>
-                                            <i class="fa fa-heart" aria-hidden="true"></i>
-                                            <i class="fa fa-comments" aria-hidden="true"></i>
-                                        </span>
-                                        <span>
-                                            <a class=" ">Learn More</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="result-card">
-                                <div>
-                                    <img src="images/result.png" alt="">
-                                </div>
-                                <div class="result-card-text">
-                                    <h4 class="mt-0 mb-20">
-                                        99 Excepteur Drive
-                                    </h4>
-                                    <div class="result-card-info">
-                                        <span class="result-card-info-price">$700,000</span>
-                                        <span>
-                                            3
-                                            <i class="fa fa-bed" aria-hidden="true"></i>
-                                            2
-                                            <i class="fa fa-bath" aria-hidden="true"></i>
-                                        </span>
-                                    </div>
-                                    <hr class="mt-10 mb-20">
-                                    <div class="result-card-footer">
-                                        <span>
-                                            <i class="fa fa-heart" aria-hidden="true"></i>
-                                            <i class="fa fa-comments" aria-hidden="true"></i>
-                                        </span>
-                                        <span>
-                                            <a class=" ">Learn More</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="resultMap">
+
                         </div>
                     </div>
                 </div>
@@ -404,6 +567,23 @@
         <script>
             $(window).load(function () {
                 $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").addClass("small-height");
+            });
+            $(function () {
+                $("#switch-view").click(function () {
+                    $(this).find("button").toggleClass("active");
+                    $(".resultContent > div").toggleClass("active");                    
+                    $(".sort-option").toggleClass("inactive");
+                });
+            });
+            $(function () {
+                $("#switch-menu").click(function () {
+                    $(".restul-sidebar").toggleClass("active");
+                });
+            });
+            $(function () {
+                $(".close-sidebar").click(function () {
+                    $(".restul-sidebar").removeClass("active");
+                });
             });
         </script>
 
