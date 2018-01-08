@@ -7239,8 +7239,8 @@ section:hover .small-item-carousel .owl-next {
     outline:1px solid red;
 } */
 
-.main-nav.blue.stick-fixed.small-height{
-    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+.main-nav.blue.stick-fixed.small-height, .resultNav{
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12) !important;
 }
 
 .fourIconWrap {
@@ -7617,9 +7617,7 @@ a.interest:hover {
     }
 }
 
-/* * {
-    outline:1px solid red;
-} */
+ 
 
 .results{
     width: 50vw; 
@@ -7688,31 +7686,36 @@ a.interest:hover {
      background-color: rgba(0,0,0,0.4);
  }
 
- /* *{
-     outline: 1px solid red;
- } */
+ 
 
  .resultForm .form-row{
-     margin: 10px 0;
-     outline: 1px solid red;
+     margin: 10px 0; 
      position: relative;
  }
 
  .resultForm .form-row.two select{
  
-     width: 48%;
+     width: 49%;
  
  }
 
  .resultForm .form-row.three select{
  
-    width: 32%;
+    width: 32.15%;
  
+}
+
+.resultForm {
+    /* color:white; */
 }
 
 .resultForm .form-row select{
     margin: 10px 0; 
     display: inline;  
+}
+
+.features-lable {
+    font-weight: normal;
 }
 
 /* *{
