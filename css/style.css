@@ -7743,6 +7743,10 @@ a.interest:hover {
     display: none;
 }
 
+.resultGrid a{
+    text-decoration: none;
+}
+
 .resultMap {
     display: none;
     background-image: url('../images/capture.png');
