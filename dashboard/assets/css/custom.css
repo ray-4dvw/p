@@ -1,68 +1,69 @@
-.sidebar-profile{
-    display:flex;
+.sidebar-profile {
+    display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
 }
 
-.sidebar-profile .author img{
+.sidebar-profile .author img {
     border-radius: 50%;
 }
 
 .socialPostCard {
-    overflow: hidden;    
+    overflow: hidden;
     background-color: white;
     border-radius: 2px;
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 }
 
 .socialPostCard .card-title {
-    font-weight:bold;
-    font-size:1.3em;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
-.socialPostCard .card-body{
+.socialPostCard .card-body {
     padding: 20px;
 }
-.socialPostCard .card-text{
+
+.socialPostCard .card-text {
     font-size: 14px;
 }
 
-.socialPostCard img{
+.socialPostCard img {
     max-width: 100%;
     object-fit: cover;
     min-height: 300px;
 }
 
-
 .listingPostCard {
-    overflow: hidden;    
+    overflow: hidden;
     background-color: white;
     border-radius: 2px;
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 }
 
 .listingPostCard .card-title {
-    font-weight:bold;
-    font-size:1.3em;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
-.listingPostCard .card-body{
+.listingPostCard .card-body {
     padding: 20px;
 }
-.listingPostCard .card-text{
+
+.listingPostCard .card-text {
     font-size: 14px;
 }
 
-.listingPostCard img:not(.plus-icon){
+.listingPostCard img:not(.plus-icon) {
     width: 100%;
     object-fit: cover;
     height: 200px;
 }
 
-.newsFeedContainer{
+.newsFeedContainer {
     margin: 0 100px;
 }
 
@@ -70,24 +71,24 @@
     /* text-align: center;
     width:100%; */
     min-height: 200px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.newListing img{
+.newListing img {
     padding: 5px;
-    width:150px;
+    width: 150px;
 }
 
-@media screen and (max-width:1200px){
-    .newsFeedContainer{
+@media screen and (max-width:1200px) {
+    .newsFeedContainer {
         margin: 0 10px;
     }
-} 
+}
 
 .newDesign {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -96,25 +97,26 @@
     padding: 50px 0;
 }
 
-.newDesign img{
+.newDesign img {
     margin-bottom: 30px;
 }
-.newDesign p{
-    margin-bottom:0;
+
+.newDesign p {
+    margin-bottom: 0;
 }
 
 .design-image.card-img-top {
     width: 100%;
-    height: inherit; 
+    height: inherit;
 }
 
 .newsCard {
     padding: 5px;
     font-size: 0.8em;
-    background-color: rgba(255,255,255,0.8);
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
-    color:#777;
+    color: #777;
     margin-bottom: 40px;
 }
 
@@ -122,16 +124,156 @@
     font-size: 1em;
 }
 
-
 .newsCard div {
     padding: 0 10px;
 }
 
-.overlay{
+.overlay {
     position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color:rgba(0,0,0,0.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dz-details, .dz-error-message, .dz-error-mark, .dz-success-mark{
+    display:none;
+}
+
+.dz-default.dz-message {
+    text-align: center;
+}
+
+.dropzone {
+    height: 200px;
+    position: absolute;
+    top: 44px;
+}
+
+/* .dz-default.dz-message{
+    max-height:200px;
+    position: absolute;
+    outline:1px solid red;
+} */
+
+.dz-preview, .dz-image{
+    height:100%;
+}
+
+.dz-preview .dz-image img{
+    height: calc(100% - 20px);
+    margin-bottom:0;
+}
+
+
+.createListingBanner{
+    background-image: url('../../../images/single/3dpreview.jpg');
+    background-size:cover;
+    background-position: bottom center;
+    min-height: 400px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    position:relative;
+}
+
+.createListingBanner:after {
+    position: absolute;
+    content: '(3D Preview)';
+    top:150px;
+    color: rgba(0,0,0,0.75);
+    font-weight: bold;
+    font-size:1.8em;
+    left: 100px;
+}
+
+.createListingLoading {
+    min-height: 400px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.createListingLoading .loadingWrapper {
+    overflow: hidden;
+}
+
+
+.createListing-form-row{
+    /* display:flex;
+    flex-direction: row;
+    justify-content: space-between; */ 
+    overflow: hidden;
+}
+
+.createListing-form-row span{
+    /* display:flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    margin-bottom: 15px; 
+}
+
+.newListing-options {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.newListing-options span{
+    max-width: 80px;
+}
+
+.btn.btn-red{
+    background-color: rgba(179,74,74,0.9);
+    border-color: transparent;
+}
+
+.btn.btn-blue{
+    background-color: rgba(9,114,147,0.9);
+    border-color: transparent;
+}
+
+.btn.btn-red:hover{
+    background-color: rgba(179,74,74,1); 
+    box-shadow:0 3px 3px rgba(0,0,0,0.5);
+}
+
+.btn.btn-blue:hover{
+    background-color: rgba(9,114,147,1); 
+    box-shadow:0 3px 3px rgba(0,0,0,0.5);
+}
+
+.createListing-form-row button{
+    width: 150px;
+}
+
+.createListing-photo-preview{
+    overflow: hidden;
+}
+
+.createListing-photo-preview span{
+    width: 20%;
+    padding-right: 5px;
+    padding-bottom: 20%;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.createListing-photo-preview span:first-child{
+    background-image: url('../img/house/Elad_001.jpg'); 
+}
+.createListing-photo-preview span:nth-child(2){
+    background-image: url('../img/house/Elad_002.jpg'); 
+}
+.createListing-photo-preview span:nth-child(3){
+    background-image: url('../img/house/Elad_003.jpg'); 
+}
+.createListing-photo-preview span:nth-child(4){
+    background-image: url('../img/house/Elad_004.jpg'); 
 }

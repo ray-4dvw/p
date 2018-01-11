@@ -3,58 +3,42 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
     <title>4D Dashboard</title>
-
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
-
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
     <!-- Animation library for notifications   -->
     <link href="assets/css/animate.min.css" rel="stylesheet" />
-
     <!--  Light Bootstrap Table core CSS    -->
     <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
-
     <link rel="shortcut icon" href="../images/favicon.png">
-
-
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="assets/css/demo.css" rel="stylesheet" />
     <link href="assets/css/custom.css" rel="stylesheet" />
-
-
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-
 </head>
 
 <body>
-
     <div class="wrapper">
         <div class="sidebar" data-color="blue" data-image="assets/img/sidebar-5.jpg">
-
             <!--
 
         Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
         Tip 2: you can also add an image using data-image tag
 
     -->
-
             <div class="sidebar-wrapper">
                 <!-- <div class="logo">
                 <a href="../index.html" class="simple-text">
                     <img src="../images/logo-white.png" alt="">
                 </a>
             </div> -->
-
                 <div class="sidebar-profile">
                     <div class="author">
                         <img class="avatar border-gray" src="assets/img/faces/face-3.jpg" alt="..." />
@@ -106,7 +90,6 @@
                 </ul>
             </div>
         </div>
-
         <div class="main-panel">
             <nav class="navbar navbar-default navbar-fixed">
                 <div class="container-fluid">
@@ -156,16 +139,13 @@
                                 </a>
                             </li>
                         </ul>
-
                         <ul class="nav navbar-nav navbar-right">
-
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <p>
                                         Dropdown
                                         <b class="caret"></b>
                                     </p>
-
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
@@ -190,51 +170,46 @@
                                 </ul>
                             </li>
                             <li>
-                                    <a href="../index.html">
-                                        <p>Log out</p>
-                                    </a>
+                                <a href="../index.html">
+                                    <p>Log out</p>
+                                </a>
                             </li>
                             <li class="separator hidden-lg hidden-md"></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
             <div class="content">
                 <div class="container-fluid ">
                     <div class="row">
                         <div class="col-md-12">
-                            <!-- <div class="listingPostCard">
-                                <div class="newDesign">
-                                    <img style="width: 100px;" class="plus-icon" src="assets/img/upload.svg"  alt="">
-                                    <p class="text-center">Click or drag photos to this area to upload</p>
-                                </div>
-                                <div class="card-body">
-                                  
-
-                                    <hr/>
-                                    <div>
-                                            <h5 class="card-title text-center">Please Upload your Floor Plan to start</h5>
-                                    </div>
-                                </div>
-                            </div> -->
                             <div class="listingPostCard">
                                 <div class="newDesign">
-                                    <img style="width: 100px;" class="plus-icon" src="assets/img/upload.svg"  alt="">
-                                    <p class="text-center">Click or drag photos to this area to upload</p>
+                                    <img style="width: 100px;" class="plus-icon" src="assets/img/upload.svg" alt="">
+                                    <!-- <p class="text-center">Click or drag photos to this area to upload</p> -->
+                                    <form action="/file-upload" id="myAwesomeDropzone" class="dropzone">
+                                        <div class="fallback">
+                                            <input name="file" type="file"/>
+                                        </div>
+                                    </form> 
                                 </div>
                                 <div class="card-body">
-                                  
-
                                     <hr/>
-                                    <div>
-                                            <h5 class="card-title text-center">Please Upload your Floor Plan to start</h5>
+                                    <div class="uploadChangeToButton text-center">
+                                        <h5 class="card-title text-center">Please Upload your Floor Plan to start</h5>
+                                        <a type="submit" class="hidden btn btn-fill btn-blue" style="margin-right: 10px;">
+                                            <i class="fa fa-floppy-o" aria-hidden="true"></i> Upload</a>
                                     </div>
                                 </div>
                             </div>
+                            <!-- <div class="listingPostCard">
+                                <form action="/file-upload" class="dropzone">
+                                    <div class="fallback">
+                                        <input name="file" type="file" multiple />
+                                    </div>
+                                </form>                               
+                            </div> -->
                         </div>
-
-
                         <div class="col-sm-6">
                             <div class="listingPostCard">
                                 <img class="design-image card-img-top" src="assets/img/house/Elad_002.jpg" alt="Card image cap">
@@ -249,7 +224,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-sm-6">
                             <div class="listingPostCard">
                                 <img class="design-image card-img-top" src="assets/img/house/Elad_003.jpg" alt="Card image cap">
@@ -264,16 +238,11 @@
                                 </div>
                             </div>
                         </div>
- 
- 
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 </body>
 
 <!--   Core JS Files   -->
@@ -292,5 +261,35 @@
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="assets/js/demo.js"></script>
 
+<script src="assets/js/dropzone.js"></script>
+
+<script>
+    Dropzone.options.myAwesomeDropzone = {
+        // autoProcessQueue: false,
+        maxFiles: 1,
+        init: function () {
+            this.on("maxfilesexceeded", function (file) {
+                this.removeAllFiles();
+                this.addFile(file);
+            });
+            this.on("addedfile", function(file) { console.log("Added file."); });
+        } ,
+        accept: function (file, done) {
+            button = document.querySelector('.uploadChangeToButton a');          
+            message = document.querySelector('.uploadChangeToButton h5');
+            console.log(button, message);
+            button.classList.remove('hidden');
+            message.classList.add('hidden');
+            done();
+        },
+        // init: function () {
+        //     this.on("addedfile", function () {
+        //         if (this.files[1] != null) {
+        //             this.removeFile(this.files[0]);
+        //         }
+        //     });
+        // }
+    };
+</script>
 
 </html>

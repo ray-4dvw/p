@@ -33,6 +33,16 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a.newlisting:hover {
+            color: #007091;
+        }
+    </style>
 
 </head>
 
@@ -190,9 +200,9 @@
                                 </ul>
                             </li>
                             <li>
-                                    <a href="../index.html">
-                                        <p>Log out</p>
-                                    </a>
+                                <a href="../index.html">
+                                    <p>Log out</p>
+                                </a>
                             </li>
                             <li class="separator hidden-lg hidden-md"></li>
                         </ul>
@@ -203,22 +213,54 @@
             <div class="content">
                 <div class="container-fluid ">
                     <div class="row">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="listingPostCard">
-                                <div class="newListing">
-                                    <img class="plus-icon" src="assets/img/plus.svg"  alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">Create New Listing</h5>
-
-                                    <hr/>
-                                    <div>
-                                        <span><br/>
-                                        </span>
+                            <div class="col-md-12">
+                                    <div class="listingPostCard">
+                                        <div class="newDesign">
+                                            <img style="width: 100px;" class="plus-icon" src="assets/img/upload.svg" alt="">
+                                            <!-- <p class="text-center">Click or drag photos to this area to upload</p> -->
+                                            <form action="/file-upload" id="myAwesomeDropzone" class="dropzone">
+                                                <div class="fallback">
+                                                    <input name="file" type="file"/>
+                                                </div>
+                                            </form> 
+                                        </div>
+                                        <div class="card-body">
+                                            <hr/>
+                                            <div class="uploadChangeToButton text-center">
+                                                <h5 class="card-title text-center"><i class="fa fa-plus-circle" aria-hidden="true"></i> Please Upload your Floor Plan to Create a New Listing</h5>
+                                                <a type="submit" class="hidden btn btn-fill btn-blue" href="newListing.html" style="margin-right: 10px;">
+                                                        <i class="fa fa-plus-circle" aria-hidden="true"></i> Upload</a>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <!-- <div class="listingPostCard">
+                                        <form action="/file-upload" class="dropzone">
+                                            <div class="fallback">
+                                                <input name="file" type="file" multiple />
+                                            </div>
+                                        </form>                               
+                                    </div> -->
                                 </div>
+                    </div>
+                    <div class="row">
+                        <!-- <div class="col-md-4 col-sm-6">
+                            <div class="listingPostCard">
+                                <a href="newListing.html" class="newlisting">
+                                    <div class="newListing">
+                                        <img class="plus-icon" src="assets/img/plus.svg" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Create New Listing</h5>
+                                        <hr/>
+                                        <div>
+                                            <span>
+                                                <br/>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </div>
+                        </div> -->
 
 
                         <div class="col-md-4 col-sm-6">
@@ -321,6 +363,37 @@
 
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="assets/js/demo.js"></script>
+
+<script src="assets/js/dropzone.js"></script>
+
+<script>
+    Dropzone.options.myAwesomeDropzone = {
+        // autoProcessQueue: false,
+        maxFiles: 1,
+        init: function () {
+            this.on("maxfilesexceeded", function (file) {
+                this.removeAllFiles();
+                this.addFile(file);
+            });
+            this.on("addedfile", function(file) { console.log("Added file."); });
+        } ,
+        accept: function (file, done) {
+            button = document.querySelector('.uploadChangeToButton a');          
+            message = document.querySelector('.uploadChangeToButton h5');
+            // console.log(button, message);
+            button.classList.remove('hidden');
+            message.classList.add('hidden');
+            done();
+        },
+        // init: function () {
+        //     this.on("addedfile", function () {
+        //         if (this.files[1] != null) {
+        //             this.removeFile(this.files[0]);
+        //         }
+        //     });
+        // }
+    };
+</script>
 
 
 </html>
