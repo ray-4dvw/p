@@ -195,6 +195,34 @@
     align-items: center;
 }
 
+.createListingBanner.full{
+    background-image: url('../../../images/single/3dpreview.jpg');
+    background-size:cover;
+    background-position: bottom center;
+    min-height: calc( 100vh - 60px );
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    position:relative;
+}
+
+.createListingBanner.full:after {
+    position: absolute;
+    content: '(3D Editor)';
+    top:150px;
+    color: rgba(0,0,0,0.75);
+    font-weight: bold;
+    font-size:1.8em;
+    left: 100px;
+}
+
+.createListingLoading.full {
+    min-height: calc( 100vh - 60px );
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .createListingLoading .loadingWrapper {
     overflow: hidden;
