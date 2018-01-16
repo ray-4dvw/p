@@ -1015,6 +1015,8 @@ function initWorkFilter(){
 function js_height_init(){
     (function($){
         $(".js-height-full").height($(window).height());
+        $(".js-height-small").height(Math.min($(window).height(), 600));
+
         $(".js-height-parent").each(function(){
             $(this).height($(this).parent().first().height());
         });
