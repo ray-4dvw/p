@@ -7139,21 +7139,20 @@ section:hover .small-item-carousel .owl-next {
 
 /* 4d custom */
 
-.btn.btn-hover-blue:hover{
-    background-color:rgba(9, 114, 147, .9);
-    color:white;
-    box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+.btn.btn-hover-blue:hover {
+    background-color: rgba(9, 114, 147, .9);
+    color: white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.btn.btn-hover-blue:hover i{
+.btn.btn-hover-blue:hover i {
     color: white;
 }
 
-.btn.btn-hover-blue i{
+.btn.btn-hover-blue i {
     color: rgba(9, 114, 147, 0.9);
-    font-size:1.1em;
+    font-size: 1.1em;
 }
-
 
 .mainSlogan {
     font-weight: 600;
@@ -7275,27 +7274,24 @@ section:hover .small-item-carousel .owl-next {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(9,114,147, 0.85);
+    background-color: rgba(9, 114, 147, 0.85);
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
     text-decoration: none;
 }
 
-
-div.iconBox-wrapper{
+div.iconBox-wrapper {
     width: 150px;
     margin: 0 auto;
     /* background-color: #ffffff30; */
-    border:1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 3px;
 }
 
 a.iconBox:hover {
     box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.7);
-    background-color: rgba(9,114,147, 1);
+    background-color: rgba(9, 114, 147, 1);
 }
-
-
 
 .iconBox img {
     width: 50px;
@@ -7309,23 +7305,22 @@ a.iconBox:hover {
     line-height: 14px;
 }
 
-.iconBox-ver { 
+.iconBox-ver {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     text-decoration: none;
 }
 
 a.iconBox-ver {
     text-decoration: none;
-} 
+}
 
-a.iconBox-ver:hover{
+a.iconBox-ver:hover {
     text-decoration: none;
-} 
+}
 
- 
 
 /* *{
     outline:1px solid red;
@@ -7338,8 +7333,8 @@ a.iconBox-ver:hover{
 .iconBox-ver p {
     font-weight: 600;
     font-size: 1em;
-    color: white; 
-    margin-top:20px;
+    color: white;
+    margin-top: 20px;
     margin-bottom: 0;
 }
 
@@ -7347,10 +7342,10 @@ a.iconBox-ver:hover{
     font-size: 1.3em;
 }
 
-.iconBox-ver p small{
+.iconBox-ver p small {
     font-weight: 400;
     font-size: 0.9em;
-    color: white;  
+    color: white;
 }
 
 .iconBox-ver-section {
@@ -7358,51 +7353,49 @@ a.iconBox-ver:hover{
     background-image: url('../images/dot.png');
     background-repeat: repeat;
     background-size: inherit;
-    background-color: rgba(0,0,0,0.01);
-   
+    background-color: rgba(0, 0, 0, 0.01);
 }
 
-@media  (max-width: 768px){
+@media (max-width: 768px) {
     .iconBox-ver-section {
-         
-        top:-70px;
+        top: -70px;
     }
 }
 
 .iconBox-ver-container {
-    position:relative;
-    top:-75px;
+    position: relative;
+    top: -75px;
     padding: 0;
-    box-shadow:0 3px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-.iconBox-ver-container > div {
+.iconBox-ver-container>div {
     float: left;
     width: 50%;
     padding: 40px 25px;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.iconBox-ver-container > div:first-child {
-    background-color:rgba(9, 114, 147, 1);
-}
-.iconBox-ver-container > div:nth-child(2) {
-    background-color: rgba(236,68,68,1);
+.iconBox-ver-container>div:first-child {
+    background-color: rgba(9, 114, 147, 1);
 }
 
-.iconBox-ver-container > div:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+.iconBox-ver-container>div:nth-child(2) {
+    background-color: rgba(236, 68, 68, 1);
 }
+
+.iconBox-ver-container>div:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 
 /* *{
     outline: 1px solid red;
 } */
 
-.iconBox-ver-container{
+.iconBox-ver-container {
     /* overflow: hidden; */
 }
-
-
 
 .mainSectionWrap {
     padding: 50px 40px;
@@ -7870,7 +7863,7 @@ a.interest:hover {
     display: none;
 }
 
-.resultGrid a{
+.resultGrid a {
     text-decoration: none;
 }
 
@@ -7927,8 +7920,6 @@ ul.singleList-detail li {
     margin-bottom: 10px;
 }
 
-
-
 ul.singleList-detail li span:first-child {
     text-align: left;
     font-weight: bold;
@@ -7946,15 +7937,13 @@ ul.singleList-detail {
     overflow: hidden;
 }
 
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     ul.singleList-detail li {
         width: 50%;
     }
-
     .keyPoint {
-        font-size:1.08em;
-        margin:0 0 5px 0;
+        font-size: 1.08em;
+        margin: 0 0 5px 0;
         font-weight: bold;
     }
 }
@@ -7993,7 +7982,126 @@ ul.singleList-room {
     background-color: #f3f3f3;
 }
 
+.threeIconWrap { 
+    max-width: 850px;
+    margin: 0 auto;
+}
 
+.threeIconBoxWrap { 
+    text-decoration: none;
+}
+
+.threeIconBox {
+    /* box-sizing: content-box; */
+    text-decoration: none;
+    max-width: 260px;
+    padding: 15px 10px;
+    min-height: 270px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.threeIconBox:hover {   
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 12px 10px rgba(0,0,0,0.22);
+}
+
+
+.threeIconBoxWrap:first-child .threeIconBox {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.threeIconBoxWrap:nth-child(2) .threeIconBox {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.threeIconBoxWrap:nth-child(3) .threeIconBox {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.threeIconBoxWrap:first-child .threeIconBox:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.threeIconBoxWrap:nth-child(2) .threeIconBox:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.threeIconBoxWrap:nth-child(3) .threeIconBox:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+/* .threeIconBoxWrap:first-child .threeIconBox {
+    background-color: rgba(9, 114, 147, 0.8);
+}
+
+.threeIconBoxWrap:nth-child(2) .threeIconBox {
+    background-color: rgba(255, 79, 79, 0.8);
+}
+
+.threeIconBoxWrap:nth-child(3) .threeIconBox {
+    background-color: rgba(69, 217, 143, 0.8);
+}
+.threeIconBoxWrap:first-child .threeIconBox:hover {
+    background-color: rgba(9, 114, 147, 1);
+}
+
+.threeIconBoxWrap:nth-child(2) .threeIconBox:hover {
+    background-color: rgba(255, 79, 79, 1);
+}
+
+.threeIconBoxWrap:nth-child(3) .threeIconBox:hover {
+    background-color: rgba(69, 217, 143, 1);
+} */
+
+.threeIconBox p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.threeIconBox p { 
+    text-decoration: none;
+}
+
+.threeIconBox img {
+    width: 100px;
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.threeIconBox div {
+    font-weight: bold;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);   
+}
+
+
+
+.threeIconBox:hover  {
+   text-decoration: underline;
+}
+
+@media (max-width:600px){
+    .threeIconBox p{
+        display:none;
+    }
+
+    .threeIconBox{
+        min-height: 150px;
+    }
+
+}
+
+
+/* .threeIconBox div{
+    position:absolute;
+    bottom:10px;
+} */
 
 
 /* *{
