@@ -1,5 +1,5 @@
 
-var userFooter = '<div class="page-section small-padding bg-dark" id="pitc' +
+var pitchDeck = '<div class="page-section small-padding bg-dark" id="pitc' +
     'hdeck"> <h2 class="hs-line-14 font-alt mb-50 mb-xs-30 text' +
     '-with-shadow mainSlogan text-center underline" style="text-decoration:' +
     'underline;">Pitch Deck</h2><iframe src = "https://docs.goog' + 'le.com/presentation/d/e/2PACX-1vTjf1QEzSbG5wKv9xnjI0S0dNRUfutDUTuqF8ku' + '3rTDiFYefHrENWdzZY809UpK_KQ5QS6kn_8ukoh1/embed?start=false&loop=true&d' +
@@ -8,4 +8,4 @@ var userFooter = '<div class="page-section small-padding bg-dark" id="pitc' +
     'en="true"></iframe></div> ';
 
 
-document.querySelector(".pitchdeck").innerHTML = userFooter;
+document.querySelector(".pitchdeck").innerHTML = pitchDeck;

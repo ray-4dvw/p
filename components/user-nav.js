@@ -3,11 +3,11 @@ var userNav = '<nav class="main-nav blue transparent stick-fixed">'+
 '            <div class="full-wrapper relative clearfix">'+
 '                <div class="local-scroll pitchdeckButtonWrap">'+
 '                    <a class="pitchdeckButton btn btn-mod btn-border-w btn-circle btn-large" style="padding:7px 25px; font-size: 1.2em;'+
-'                    font-weight: bold; " href="#pitchdeck">Pitch Deck</a>'+
+'                    font-weight: bold; " href="#pitchdeck">Pitch<br/>Deck</a>'+
 '                </div>'+
 ''+
 '                <div class="nav-logo-wrap local-scroll">'+
-'                    <a href="mp-index.html" class="logo">'+
+'                    <a href="index.html" class="logo">'+
 '                        <img src="images/logo-white.png" alt="" />'+
 '                        <span>Virtual World</span>'+
 '                    </a>'+

@@ -8098,19 +8098,27 @@ ul.singleList-room {
 }
 
 .pitchdeckButtonWrap {
-    position: absolute;
-    left: 50%;
-    margin-left: -70px;
-    top:8px;
+    position: fixed;
+    left: 20px; 
+    top:86px;
 }
-.pitchdeckButtonWrap  a.pichdeckButton{
-   
+.pitchdeckButtonWrap  a.pitchdeckButton{    
     font-weight: bold !important;
     font-size:1.1em !important;
 }
 
 
- a.pichdeckButton{
+a.pitchdeckButton.btn.btn-mod.btn-border-w.btn-circle.btn-large {
+    background-color: rgba(9, 114, 147, 1);
+    box-shadow: 0 3px 6px rgba(30,30,30,0.3);
+    color: #ededed;
+    border-color: #ededed;
+}
+
+a.pitchdeckButton.btn.btn-mod.btn-border-w.btn-circle.btn-large:hover {
+    box-shadow: 3px 6px 9px rgba(20,20,20, 0.4);
+    border-color:white !important;
+    color:white !important;
 }
 
 
