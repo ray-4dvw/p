@@ -2,7 +2,7 @@
 var userNav = '<nav class="main-nav blue transparent stick-fixed">'+
 '            <div class="full-wrapper relative clearfix">'+
 '                <div class="nav-logo-wrap local-scroll">'+
-'                    <a href="index.html" class="logo">'+
+'                    <a href="http://www.4dvw.com" class="logo">'+
 '                        <img src="images/logo-white.png" alt="" />'+
 '                        <span>Virtual World</span>'+
 '                    </a>'+

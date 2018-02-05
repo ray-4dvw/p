@@ -3,7 +3,7 @@ var userFooter = '<footer class="page-section bg-darker footer pb-40 pt-80">'+
 '    <div class="container">'+
 '        <div class="col-xs-12 col-sm-4 footerLeft">'+
 '            <div class="wow fadeInUp footerLogoWrap" data-wow-duration="1.5s">'+
-'                <a class="logo">'+
+'                <a class="logo"  href="http://www.4dvw.com">'+
 '                    <img src="images/logo-white.png" alt="" />'+
 '                </a>'+
 '                <span>VIRTUAL'+
