@@ -14,22 +14,22 @@ var userFooter = '<footer class="page-section bg-darker footer pb-40 pt-80">'+
 ''+
 '        <div class="col-xs-12 col-sm-4 footerCenter footerLinks">'+
 '            <div>'+
-'                <a>TEAM</a>'+
+'                <a href="http://www.4dvw.com/about">TEAM</a>'+
 '            </div>'+
 '            <div>'+
-'                <a>INVESTOR RELATIONS</a>'+
+'                <a href="http://www.4dvw.com/investor_relations">INVESTOR RELATIONS</a>'+
 '            </div>'+
 '            <div>'+
-'                <a>YOUR HOME</a>'+
+'                <a href="http://www.4dvw.com/">YOUR HOME</a>'+
 '            </div>'+
 '            <div>'+
-'                <a>Terms and Conditions</a>'+
+'                <a href="javascript:void(0)">Terms and Conditions</a>'+
 '            </div>'+
 '            <div class="footerSocial mt-10">'+
-'                    <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>'+
-'                    <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>                           '+
-'                    <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>'+
-'                    <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>'+
+'                    <a href="javascript:void(0)" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>'+
+'                    <a href="javascript:void(0)" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>                           '+
+'                    <a href="javascript:void(0)" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>'+
+'                    <a href="javascript:void(0)" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>'+
 '                </div>'+
 '        </div>'+
 ''+
