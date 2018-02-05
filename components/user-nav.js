@@ -15,10 +15,10 @@ var userNav = '<nav class="main-nav blue transparent stick-fixed">'+
 '                        <li>'+
 '                            <a> </a>'+
 '                        </li>'+
-'                        <li>'+
-'                            <a href="#" onClick="$(\'#myModal\').modal(\'show\');" class="" style="font-size:12px;" data-toggle="modal" data-target="#basicModal">'+
-'                                <i class="fa fa-user yourHomeIcon" style="font-size:18px;"></i> Your Home</a>'+
-'                        </li>'+
+// '                        <li>'+
+// '                            <a href="#" onClick="$(\'#myModal\').modal(\'show\');" class="" style="font-size:12px;" data-toggle="modal" data-target="#basicModal">'+
+// '                                <i class="fa fa-user yourHomeIcon" style="font-size:18px;"></i> Your Home</a>'+
+// '                        </li>'+
 '                    </ul>'+
 '                </div>'+
 '            </div>'+
