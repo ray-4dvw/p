@@ -6,7 +6,7 @@ var userFooter = '<footer class="page-section bg-darker footer pb-40 pt-80">'+
 '                <a class="logo"  href="http://www.4dvw.com">'+
 '                    <img src="images/logo-white.png" alt="" />'+
 '                </a>'+
-'				 <a href="http:/www.4dvw.com">'+
+'				 <a href="http://www.4dvw.com">'+
 '                <span>VIRTUAL'+
 '                    <br/>WORLD</span>'+
 '				 </a>' +
